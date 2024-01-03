@@ -1,3 +1,6 @@
 #!/usr/bin/python3
-for i in range(99):
-    print("{} = {}".format(i, hex(i)))
+for number in range(100):
+    if number == 99:
+        print("{}".format(number))
+    else:
+        print("{:02}".format(number), end=", ")
