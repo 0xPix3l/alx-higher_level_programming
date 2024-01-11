@@ -1,0 +1,11 @@
+#!/usr/bin/python3
+def best_score(a_dictionary):
+    alist = []
+    if not isinstance(a_dictionary, dict) or len(a_dictionary) == 0:
+        return None
+    else:
+        for i in a_dictionary:
+            alist.append(a_dictionary[i])
+    return max(alist)
+a_dictionary = {'John': 12, 'Bob': 14, 'Mike': 14, 'Molly': 16, 'Adam': 10}
+print(best_score(a_dictionary))
