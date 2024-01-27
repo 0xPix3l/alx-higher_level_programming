@@ -1,0 +1,30 @@
+>>> add_integer = __import__('0-add_integer').add_integer
+
+adding two normal numbers:
+>>> add_integer(2, 3)
+5
+
+adding two floats:
+>>> add_integer(2.0, 3.0)
+5
+
+adding one negative number:
+>>> add_integer(2, -3)
+-1
+
+adding two negative numbers:
+>>> add_integer(-4, -5)
+-9
+
+trying only one parameter: # will add the a to 98
+>>> add_integer(2)
+100
+
+==========
+Non numbers
+==========
+
+>>> add_integer(2, "hello")
+Traceback (most recent call last):
+TypeError: b must be an integer
+
