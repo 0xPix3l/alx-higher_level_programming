@@ -1,0 +1,10 @@
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+trying normal use:
+	>>> say_my_name("Ziad", "Mohamed")
+	My name is Ziad Mohamed
+
+trying digits:
+    >>> say_my_name(6, "James")
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
