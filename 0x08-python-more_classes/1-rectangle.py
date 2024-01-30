@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-""" Defines a Rectangle class. """
+"""Defines a Rectangle class."""
 
 
 class Rectangle:
-    """ This is a class. """
+    """Represent a rectangle."""
 
     def __init__(self, width=0, height=0):
         """Initialize a new Rectangle.
@@ -17,7 +17,7 @@ class Rectangle:
 
     @property
     def width(self):
-        """ Get or set the width of the rectangle """
+        """Get/set the width of the rectangle."""
         return self.__width
 
     @width.setter
@@ -29,9 +29,9 @@ class Rectangle:
         self.__width = value
 
     @property
-    def height(self)
-    """ Get or set the height of the rectangle """
-    return self.__height
+    def height(self):
+        """Get/set the height of the rectangle."""
+        return self.__height
 
     @height.setter
     def height(self, value):
