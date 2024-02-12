@@ -83,7 +83,7 @@ class Rectangle(Base):
             print()
 
     def __str__(self):
-        """Defines a format for the string representation of the class"""
+        """Defines a format for the string"""
         return f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}"
 
     def update(self, *args, **kwargs):
@@ -124,7 +124,7 @@ class Rectangle(Base):
                     self.y = v
 
     def to_dictionary(self):
-        """Returns the dictionary representation of a Rectangle"""
+        """Returns dictionary"""
 
         obj_dictionary = {'id': self.id, 'width': self.__width,
                           'height': self.__height, 'x': self.__x,
