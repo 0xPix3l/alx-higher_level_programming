@@ -1,2 +1,2 @@
 -- Shows the tables of sql database.
-SHOW TABLES FROM `sql`;
+SHOW TABLES;
