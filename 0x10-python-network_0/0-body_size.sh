@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-# gets content page 
-curl -sI HEAD  | grep "content-lengt"h | cut -d " " -f2
+# gets content page
+curl -sI $1 | grep "Content-Length" | cut -d " " -f2
