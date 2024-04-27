@@ -1,18 +1,19 @@
 #!/usr/bin/python3
 """
-Takes url
+takes in a URL and an email, sends a POST request to the passed URL
 """
 import urllib.request
 from sys import argv
 
-if __name == "__main__":
+
+if __name__ == "__main__":
     """
-    takes url
+    takes in a URL and an email, sends a POST request to the passed
     """
     url = argv[1]
-    req = urllib.requset.Request(url)
+    req = urllib.request.Request(url)
     try:
-        wih urllib.request.urlopen(req) as response:
+        with urllib.request.urlopen(req) as response:
             html = response.read()
             html_str = html.decode('utf-8')
             print(html_str)
